@@ -1,0 +1,84 @@
+# Video Generation Configuration
+# ===============================
+
+# Output settings
+output:
+  resolution: [1920, 1080]  # 1080p
+  fps: 30
+  format: "mp4"
+  codec: "libx264"
+  bitrate: "8000k"
+  output_dir: "output"
+  final_filename: "7900XTX_Qwen27B_Guide.mp4"
+
+# Manim settings
+manim:
+  quality: "medium"  # low, medium, high, production, 4k
+  renderer: "cairo"  # cairo, opengl
+  quality_dir: "1080p30"  # manim quality "production" maps to directory "1080p30"
+  background_color: "#0d1117"  # GitHub dark theme
+  font: "STHeiti Medium"  # Chinese font (Heiti SC)
+  code_font: "JetBrains Mono"
+  text_color: "#c9d1d9"
+  accent_color: "#6cb4ee"
+  success_color: "#4a9e4f"
+  error_color: "#c46054"
+  warning_color: "#c4982e"
+  terminal_bg: "#161b22"
+  terminal_text: "#8b949e"
+  terminal_prompt: "#6cb4ee"
+
+# Scene timing (seconds per section)
+timing:
+  intro: 45
+  hardware: 45
+  questions: 45
+  models: 45
+  speed_results: 45
+  accuracy: 45
+  ministral_3b: 60
+  comparison: 45
+  ranking: 45
+  outro: 30
+  tech_specs: 15
+
+# TTS settings (edge-tts)
+tts:
+  voice: "zh-CN-XiaoxiaoNeural"  # 甜美柔和女声
+  rate: "+0%"  # Speed
+  volume: "+0%"
+  pitch: "+0Hz"
+  output_format: "audio-24khz-48kbitrate-mono-mp3"
+
+# Subtitle settings
+subtitles:
+  font_size: 40
+  font_color: "#ffd700"
+  outline_color: "#000000"
+  outline_width: 2
+  position: "bottom"  # bottom, center
+  margin_bottom: 80
+  max_chars_per_line: 30
+
+# Color palette for charts
+chart_colors:
+  - "#6cb4ee"
+  - "#4a9e4f"
+  - "#c4982e"
+  - "#c46054"
+  - "#8b6cc1"
+  - "#3a9eaa"
+  - "#d4846e"
+  - "#8b949e"
+
+# Asset paths
+assets:
+  fonts_dir: "assets/fonts"
+  images_dir: "assets/images"
+  audio_dir: "assets/audio"
+  temp_dir: "assets/temp"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "assets/temp/video_gen.log"

@@ -1,0 +1,38 @@
+# Video Script - MacBook Pro 本地运行 AI 大模型评测
+
+sections:
+  - title: "【开场】0:00 - 0:45"
+    time_range: "0:00 - 0:45"
+    content:
+      - type: "画面描述"
+        text: |
+          黑屏渐入 → MacBook Pro 产品图
+          弹出文字：「2026 MacBook Pro 跑大模型，能有多快？」
+          切换：终端界面，显示 `ollama list` 命令结果
+      - type: "解说词"
+        text: |
+          一台 2019 年的 MacBook Pro，Intel i7 六核处理器，没有 GPU 加速。
+          
+          2026 年了，这种配置本地跑 AI 大模型，到底能行不行？
+          
+          今天，我们用 9 个主流开源模型，5 道统一考题，实际测一测。
+    visual_prompts:
+      - "MacBook Pro 产品图"
+      - "文字动画: 2026 MacBook Pro 跑大模型"
+
+  - title: "【硬件环境】0:45 - 1:30"
+    time_range: "0:45 - 1:30"
+    content:
+      - type: "画面描述"
+        text: "终端输入 system_profiler，弹出参数标注框"
+      - type: "解说词"
+        text: "先看一下测试环境。MacBook Pro 16,1，2019 年款。CPU：Intel Core i7-9750H。内存：32GB DDR4。显卡：AMD Radeon Pro 5300M 4GB——但 Ollama 在 Intel Mac 上只能用 CPU 推理。"
+    visual_prompts:
+      - "终端: system_profiler"
+      - "参数标注卡"
+
+validation:
+  total_sections: 10
+  sections_with_visual_prompts: 9
+  sections_with_narration: 10
+  hierarchical_structure: "valid"

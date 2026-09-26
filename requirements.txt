@@ -1,0 +1,24 @@
+# Core video generation
+manim==0.18.0
+moviepy==1.0.3
+edge-tts==6.1.9
+
+# YAML parsing
+pyyaml==6.0.1
+
+# Image/audio processing
+Pillow==10.0.1
+numpy==1.24.3
+scipy==1.11.3
+
+# Audio processing
+pydub==0.25.1
+
+# Progress bars
+tqdm==4.66.1
+
+# Async support
+asyncio-throttle==1.0.2
+
+# Type hints
+typing_extensions==4.7.1

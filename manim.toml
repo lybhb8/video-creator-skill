@@ -1,0 +1,14 @@
+[CLI]
+ffmpeg = "/Users/mac/micromamba/envs/manim_env/bin/ffmpeg"
+media_dir = "assets/temp"
+output_dir = "output"
+scene_names = ["ComparisonScene", "RankingScene", "OutroScene"]
+quality = "low_quality"
+resolution = [1920, 1080]
+fps = 30
+write_to_movie = true
+save_as_gif = false
+save_last_frame = false
+png_format = "png"
+open_file = false
+preview = false

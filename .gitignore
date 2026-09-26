@@ -1,0 +1,23 @@
+# --- build artifacts / generated media (regenerate via main.py) ---
+output/
+output_agnes/
+assets/temp/
+assets/audio/
+media/
+tts_compare/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# --- os ---
+.DS_Store
+Thumbs.db
+
+# --- keep: assets/images/ (10M, scenes depend on *_small assets) ---
